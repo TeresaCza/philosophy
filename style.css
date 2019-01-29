@@ -1,0 +1,363 @@
+/* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ===General styles=== */
+
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	background-image: url("img/curls.png");
+	/* This pattern is downloaded from www.subtlepatterns.com*/
+    font-family: 'Merriweather', serif;
+    color: #eee;
+}	
+
+.container
+{
+	background-color: #202020;	
+	text-align: center;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+/* Header styles */
+
+header
+{
+	background-color: #777;
+    width: 95%;
+    margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 2rem;
+	padding: 1rem 0.4rem;
+	font-family: 'Lora', serif;
+	border-bottom: 1px dashed #000;
+}
+
+.logo
+{
+    text-decoration: none;
+    color: #eee;
+}
+
+/* ===Navigation styles=== */
+
+#site-nav
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.site-menu
+{
+	display: flex;	
+	width: 100%;
+	justify-content: center;
+	padding: 10px;
+	border-bottom: 1px dashed #777;    
+	
+}
+
+.site-menu > ul
+{
+	display: flex;
+	flex-flow: column wrap;   
+    
+}
+
+.site-menu ul li
+{
+	background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255, 0.2) 25%, rgba(255,255,255, 0.2) 75%, rgba(255,255,255, 0) 100%);
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255,255,255, 0.6);
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.site-menu ul li a
+{
+	text-decoration: none;
+	color: #fff;
+	line-height: 1.2;    
+}
+
+.site-menu ul li a:hover
+{
+    cursor: pointer;
+}
+
+.site-menu ul li:hover a
+{
+	color: #aaa;    
+}
+
+
+/* ===Main styles=== */
+
+
+article
+{
+	margin: 3rem 2rem;
+	line-height: 1.5;    
+}
+
+
+#images
+{
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+    padding: 10px 0;
+    width: 100%;
+    
+}
+
+img
+{
+	padding: 10px;
+	max-width: 100%;
+    width: 270px;    
+	border-radius: 5px;
+}
+
+
+img:hover
+{
+	box-shadow: 0 0 2px 2px #777;
+	cursor: pointer;
+}
+
+.inner
+{
+    float: left;   
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.inner:hover
+{
+    box-shadow: 0 0 0 0;
+    cursor: auto;
+}
+
+.menu2
+{
+    display: none;
+}
+
+.up
+{
+    text-align: right;    
+    font-size: 0.8rem;    
+    padding: 8px;
+}
+
+.up a
+{
+    color: #aaa;
+    text-decoration: none;    
+}
+
+.up a:hover
+{
+    color: #999;
+}
+
+.link
+{
+    text-decoration: none;
+    color: #aaa;
+}
+
+.link:hover
+{
+    color: #999;
+}
+
+.text
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;    
+    background-color: #555;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5;
+    border-top: 1px dashed #000;
+    border-bottom: 1px dashed #000;
+}
+
+.btn
+{
+    background-color: transparent;
+    border: none;
+    color: #eee;
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+footer
+{
+    background-color: #202020;
+    color: #aaa;
+    font-size: 0.9rem;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: #eee;
+}
+
+footer a:visited
+{
+    text-decoration: none;
+    color: #000;
+}
+
+/* ===Media styles===*/
+
+@media (min-width: 768px)
+{
+    article
+    {
+        text-align: justify;
+    }
+/*
+	.container
+	{
+		display:flex;
+		justify-content: space-between;
+		align-items: center;
+    }
+    
+    .site-nav
+    {
+        align-self: flex-start;
+    }
+	
+	
+	.site-menu
+	{
+		border: none;
+	}
+*/
+}
+
+@media (min-width: 1025px)
+{
+	.container
+	{
+		flex-direction: column;
+	}
+    
+    .site-menu
+	{
+		padding: 0;
+        border: none;
+	}
+       
+		
+	.site-menu ul 
+	{
+		flex-flow: row wrap;
+        justify-content: center;
+		width: 100%;
+		margin: 0;
+		background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255, 0.2) 25%, rgba(255,255,255, 0.2) 75%, rgba(255,255,255, 0) 100%);
+		box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255,255,255, 0.6);
+		border-radius: 5px;
+	}
+	
+	.site-menu ul li
+	{
+		background: transparent;
+		/*box-shadow: 0 0 0 0;*/
+		border-radius: 0;
+		padding: 10px;		
+	}
+    
+    .main2
+    {
+        display: flex;
+        align-items: center;
+    }
+    
+    .menu2
+    {
+        display: block;
+        width: 20%;
+    }
+    
+    .menu2 ul
+    {
+        flex-direction: column;
+        
+        
+    }
+	
+    .up
+    {
+/*        display: none;        */
+    }
+}
