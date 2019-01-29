@@ -283,25 +283,6 @@ footer a:visited
     {
         text-align: justify;
     }
-/*
-	.container
-	{
-		display:flex;
-		justify-content: space-between;
-		align-items: center;
-    }
-    
-    .site-nav
-    {
-        align-self: flex-start;
-    }
-	
-	
-	.site-menu
-	{
-		border: none;
-	}
-*/
 }
 
 @media (min-width: 1025px)
@@ -354,10 +335,6 @@ footer a:visited
         flex-direction: column;
         
         
-    }
-	
-    .up
-    {
-/*        display: none;        */
-    }
+    }	
+    
 }
