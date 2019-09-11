@@ -93,10 +93,12 @@ header
 /* ===Navigation styles=== */
 
 #site-nav
-{
-    width: 100%;
+{    
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
 
 .site-menu
@@ -105,13 +107,14 @@ header
 	width: 100%;
 	justify-content: center;
 	padding: 10px;
-	border-bottom: 1px dashed #777;    
+	border-bottom: 1px dashed #777;
+    background-color: #202020;
 	
 }
 
 .site-menu > ul
-{
-	display: flex;
+{	
+    display: flex;
 	flex-flow: column wrap;   
     
 }
@@ -324,6 +327,7 @@ footer a:visited
         align-items: center;
     }
     
+/*
     .menu2
     {
         display: block;
@@ -332,9 +336,9 @@ footer a:visited
     
     .menu2 ul
     {
-        flex-direction: column;
-        
+        flex-direction: column;        
         
     }	
+*/
     
 }
