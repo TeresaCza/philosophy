@@ -96,6 +96,7 @@ header
 {    
     margin-left: auto;
     margin-right: auto;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     width: 100%;
