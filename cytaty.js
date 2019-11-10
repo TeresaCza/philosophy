@@ -9,6 +9,10 @@ var num = 0;
 
 'use strict';
 
+var buttons = document.querySelectorAll("button");
+buttons[0].addEventListener("click", prev);
+buttons[1].addEventListener("click", next);
+
 function next() {
   var quo = document.getElementById("quote");
   num++;
