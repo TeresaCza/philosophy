@@ -253,6 +253,11 @@ img:hover
     padding: 10px;
     font-size: 2rem;
     cursor: pointer;
+    transition: font-weight .5s;
+}
+
+.btn:hover, .btn:focus {    
+    font-weight: 700;
 }
 
 footer
